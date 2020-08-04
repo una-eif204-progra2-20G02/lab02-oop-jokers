@@ -21,6 +21,7 @@ double getMonthlySalary(){};
 void setmonthlySalary(double monthlySalary){};
 double Salary(){};
 string toString(){};
+~Professor() {};
 
 };
 

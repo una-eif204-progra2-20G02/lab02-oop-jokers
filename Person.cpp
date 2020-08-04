@@ -11,29 +11,29 @@ Person::Person(const string firstName, const string lastName, int documentId)
   this->lastName=lastName;
   this->documentId=documentId;
 }
-Person::string getFirstName()
+string Person::  getFirstName()
 {
   return this->firstName;
 }
-Person::void setFirstName(string firstName)
+void Person:: setFirstName(string firstName)
 {
   this->firstName=firstName;
 }
-Person::string getLastName()
+string Person::getLastName()
 {
   return this->lastName;
 }
-Person::void setLastName(string)
+void Person:: setLastName(string)
 {
   this->lastName=lastName;
 }
-Person::int getDocumentId()
+int Person:: getDocumentId()
 {
   return this->documentId;
 }
-Person::void setDocumentId(int documentId)
+void Person:: setDocumentId(int documentId)
 {
   this->documentId=documentId;
 }
-Person::virtual double salary(){}
-Person::virtual string toString(){}
+virtual double  Person::  salary(){}
+virtual string Person::toString(){}

@@ -7,7 +7,7 @@
 
 
 #include <string>
-#include <ostream>
+#include <iostream>
 
 using namespace std;
 /**
@@ -18,7 +18,7 @@ class Person {
 private:
 string firstName;
 string lastName;
-int documenteId;
+int documentId;
 
 public:
 Person();

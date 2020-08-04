@@ -24,7 +24,7 @@ double Professor::getCommissionRate(){
   return Professor::commissionRate;
 }
 void Professor::setCommissionRate(double commissionRate){
-this->commissionRate=newComission;
+this->commissionRate=commissionRate;
 }
 double Professor::getMonthlySalary(){
   return monthlySalary;
@@ -38,9 +38,9 @@ double Professor::Salary(){
 
 string Professor::toString(){
   stringstream s;
-  s<<"Profesor Information: "<< firstName<<endl;
-  s<< "Doc Id: "<< documentId<<", "<< "Monthly Salary: "<<Salary<<endl;
-  resturn s.str();
+  s<<"Profesor Information: "<< getFirstName()<<endl;
+  s<< "Doc Id: "<< getDocumentId()<<", "<< "Monthly Salary: "<<Salary<<endl;
+  return s.str();
 }
 
 };
