@@ -4,36 +4,36 @@
 
 #include "Person.h"
 
-Person(){}
-Person(string firstName, string lastName, int documentId)
+Person::Person(){}
+Person::Person(const string firstName, const string lastName, int documentId)
 {
   this->firstName=firstName;
   this->lastName=lastName;
   this->documentId=documentId;
 }
-string getFirstName()
+Person::string getFirstName()
 {
   return this->firstName;
 }
-void setFirstName(string firstName)
+Person::void setFirstName(string firstName)
 {
   this->firstName=firstName;
 }
-string getLastName()
+Person::string getLastName()
 {
   return this->lastName;
 }
-void setLastName(string)
+Person::void setLastName(string)
 {
   this->lastName=lastName;
 }
-int getDocumentId()
+Person::int getDocumentId()
 {
   return this->documentId;
 }
-void setDocumentId(int documentId)
+Person::void setDocumentId(int documentId)
 {
   this->documentId=documentId;
 }
-virtual double salary(){}
-virtual string toString(){}
+Person::virtual double salary(){}
+Person::virtual string toString(){}

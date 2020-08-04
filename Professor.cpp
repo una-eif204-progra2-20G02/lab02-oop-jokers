@@ -6,42 +6,37 @@
 #include <sstream>
 #include <iostream>
 #include "Professor.h"
-#include "Persona.h"
 using namespace std;
-class Professor: public Persona {
-private:
-double monthlySalary;
-double commissionRate;
-public:
-Professor(){
+
+Professor::Professor(){
 
 }
-Professor(double monthlySalary, double commissionRate){
+Professor::Professor(double monthlySalary, double commissionRate){
   this-> monthlySalary= monthlySalary;
 this-> commissionRate= commissionRate;}
 
-Professor(double monthlySalary, double commissionRate, const string& lastName, const string& firstName, const string& documentId): Persona(firstName, lastName, documentId) {
+Professor::Professor(double monthlySalary, double commissionRate, const string firstName, const string lastName, const string documentId): Person(firstName,  lastName, documentId) {
   this-> monthlySalary= monthlySalary;
 this-> commissionRate= commissionRate;}
 
-virtual ~Professor(){}
-getCommissionRate(){
-  return commissionRate;
+virtual Professor::~Professor(){}
+double Professor::getCommissionRate(){
+  return Professor::commissionRate;
 }
-setCommissionRate(double commissionRate){
+void Professor::setCommissionRate(double commissionRate){
 this->commissionRate=newComission;
 }
-getMonthlySalary(){
+double Professor::getMonthlySalary(){
   return monthlySalary;
 }
-set monthlySalary(double monthlySalary){
+void Professor::setmonthlySalary(double monthlySalary){
   this->monthlySalary=monthlySalary;
 }
-double Salary(){
+double Professor::Salary(){
    return (commissionRate*monthlySalary)+ monthlySalary;
 }
 
-string toString(){
+string Professor::toString(){
   stringstream s;
   s<<"Profesor Information: "<< firstName<<endl;
   s<< "Doc Id: "<< documentId<<", "<< "Monthly Salary: "<<Salary<<endl;

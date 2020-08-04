@@ -22,7 +22,7 @@ int documenteId;
 
 public:
 Person();
-Person(string firstName:const, string lastName, int documenteId);
+Person(const string firstName, const string lastName, int documenteId);
 
 string getFirstName();
 
@@ -36,7 +36,7 @@ int getDocumentId();
 
 void setDocumentId(int documentId);
 
-virtual double salary()=0;
+virtual double salary();
 virtual string toString()=0;
 
 };

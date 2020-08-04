@@ -5,17 +5,22 @@
 #ifndef LAB02_OOP_PROFESSOR_H
 #define LAB02_OOP_PROFESSOR_H
 #include "Person.h"
-
+using namespace std;
 class Professor: public Person {
   private:
 double monthlySalary;
 double commissionRate;
 public:
-Professor();
-Professor(monthlySalary:double,commissionRate:double);
-professor(firstName:const std::string&,lastName:const std::string&,documentId:int,monthlySalary:double,commissionRate:double);
-virtual; ~Professor();
-
+Professor(){};
+Professor(double monthlySalary, double commissionRate){};
+Professor(double monthlySalary, double commissionRate, const string lastName, const string firstName, const string documentId): Person(firstName, lastName, documentId) {};
+virtual ~Professor(){};
+double getCommissionRate(){};
+void setCommissionRate(double commissionRate){};
+double getMonthlySalary(){};
+void setmonthlySalary(double monthlySalary){};
+double Salary(){};
+string toString(){};
 
 };
 
