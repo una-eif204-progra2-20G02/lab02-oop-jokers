@@ -35,5 +35,7 @@ void Person:: setDocumentId(int documentId)
 {
   this->documentId=documentId;
 }
-virtual double  Person::  salary(){}
-virtual string Person::toString(){}
+double  Person::  salary(){
+	return 0;
+}
+string Person::toString() { return" "; }

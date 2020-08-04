@@ -13,7 +13,7 @@ double commissionRate;
 public:
 Professor(){};
 Professor(double monthlySalary, double commissionRate){};
-Professor(double monthlySalary, double commissionRate, const string lastName, const string firstName, const string documentId): Person(firstName, lastName, documentId) {};
+Professor(double monthlySalary, double commissionRate, const string lastName, const string firstName, const int documentId): Person(firstName, lastName, documentId) {};
 virtual ~Professor(){};
 double getCommissionRate(){};
 void setCommissionRate(double commissionRate){};
@@ -21,7 +21,7 @@ double getMonthlySalary(){};
 void setmonthlySalary(double monthlySalary){};
 double Salary(){};
 string toString(){};
-~Professor() {};
+
 
 };
 

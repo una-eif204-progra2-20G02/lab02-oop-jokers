@@ -7,6 +7,12 @@
       "project": "CMakeLists.txt",
       "projectTarget": "lab02-oop.exe",
       "name": "lab02-oop.exe"
+    },
+    {
+      "type": "default",
+      "project": "Main.cpp",
+      "projectTarget": "",
+      "name": "Main.cpp"
     }
   ]
 }

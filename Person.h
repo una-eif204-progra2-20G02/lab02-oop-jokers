@@ -36,7 +36,7 @@ int getDocumentId();
 
 void setDocumentId(int documentId);
 
-virtual double salary();
+virtual  double salary();
 virtual string toString()=0;
 
 };

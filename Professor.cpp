@@ -15,11 +15,11 @@ Professor::Professor(double monthlySalary, double commissionRate){
   this-> monthlySalary= monthlySalary;
 this-> commissionRate= commissionRate;}
 
-Professor::Professor(double monthlySalary, double commissionRate, const string firstName, const string lastName, const string documentId): Person(firstName,  lastName, documentId) {
+Professor::Professor(double monthlySalary, double commissionRate, const string firstName, const string lastName, const int documentId): Person(firstName,  lastName, documentId) {
   this-> monthlySalary= monthlySalary;
 this-> commissionRate= commissionRate;}
 
-virtual Professor::~Professor(){}
+ Professor::~Professor(){}
 double Professor::getCommissionRate(){
   return Professor::commissionRate;
 }
@@ -42,5 +42,4 @@ string Professor::toString(){
   s<< "Doc Id: "<< getDocumentId()<<", "<< "Monthly Salary: "<<Salary<<endl;
   return s.str();
 }
-
-};
+// da errores de "x already has a body".
