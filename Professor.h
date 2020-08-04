@@ -7,6 +7,15 @@
 #include "Person.h"
 
 class Professor: public Person {
+  private:
+double monthlySalary;
+double commissionRate;
+public:
+Professor();
+Professor(monthlySalary:double,commissionRate:double);
+professor(firstName:const std::string&,lastName:const std::string&,documentId:int,monthlySalary:double,commissionRate:double);
+virtual; ~Professor();
+
 
 };
 
