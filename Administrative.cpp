@@ -9,7 +9,7 @@
 
 Administrative::Administrative(){}
 Administrative::Administrative(double monthlySalary){}
-Administrative::Administrative(double monthlySalary, const string firstName, const string lastName, const int documentId): Person(firstName,  lastName, documentId) {
+Administrative::Administrative(double monthlySalary, const std::string firstName, const std::string lastName, const int documentId): Person(firstName,  lastName, documentId) {
   this-> monthlySalary= monthlySalary;
 }
 virtual Administrative::~Administrative(){}

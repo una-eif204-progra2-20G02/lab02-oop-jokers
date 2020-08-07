@@ -5,25 +5,25 @@
 #include "Person.h"
 
 Person::Person(){}
-Person::Person(const std:string firstName, const std::string lastName, int documentId)
+Person::Person(const std::string& firstName, const std::string& lastName, int documentId)
 {
   this->firstName=firstName;
   this->lastName=lastName;
   this->documentId=documentId;
 }
-string Person::  getFirstName()
+std::string Person::getFirstName()
 {
   return this->firstName;
 }
-void Person:: setFirstName(string firstName)
+void Person::setFirstName(std::string& firstName)
 {
   this->firstName=firstName;
 }
-string Person::getLastName()
+std::string Person::getLastName()
 {
   return this->lastName;
 }
-void Person:: setLastName(string)
+void Person::setLastName(std::string& lastName)
 {
   this->lastName=lastName;
 }
