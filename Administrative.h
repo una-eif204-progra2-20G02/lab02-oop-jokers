@@ -7,6 +7,16 @@
 #include "Person.h"
 
 class Administrative: public Person {
+private:
+    double monthlySalary;
+public:
+    Administrative();
+    Administrative(double monthlySalary);
+    Administrative(const std::string& firstName,const std::string& lastName,int documentld,double monthlySalary);
+    double getMothlySalary();
+    void setMonthlySalary(double monthlySalary);
+    double salary();
+    string toString();
 
 };
 
