@@ -36,7 +36,9 @@ void Person:: setDocumentId(int documentId)
   this->documentId=documentId;
 }
 
-string Person::toString() { stringstream s;
+std::string Person::toString()
+{
+    std::stringstream s;
 s<<"El nombre completo de la persona es: "<<this->firstName<<" "<<this->lastName<<endl;
 s<<"El id es: "<<this->documentId<<endl;
 return s.str();
