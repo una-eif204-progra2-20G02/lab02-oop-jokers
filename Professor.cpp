@@ -33,13 +33,13 @@ void Professor::setmonthlySalary(double monthlySalary){
   this->monthlySalary=monthlySalary;
 }
 double Professor::Salary(){
-   return (commissionRate*monthlySalary)+ monthlySalary;
+   return (getCommissionRate*getMonthlySalary)+ getMonthlySalary;
 }
 
 string Professor::toString(){
   stringstream s;
-  s<<"Profesor Information: "<< getFirstName()<<endl;
-  s<< "Doc Id: "<< getDocumentId()<<", "<< "Monthly Salary: "<<Salary<<endl;
+  s<<"Informacion"<<Person::toString()<<endl;
+  s<< "Monthly Salary: "<<Salary<<endl;
   return s.str();
 }
 // da errores de "x already has a body".

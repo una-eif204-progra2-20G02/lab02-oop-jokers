@@ -35,7 +35,9 @@ void Person:: setDocumentId(int documentId)
 {
   this->documentId=documentId;
 }
-double  Person::  salary(){
-	return 0;
-}
-string Person::toString() { return" "; }
+
+string Person::toString() { stringstream s;
+s<<"El nombre completo de la persona es: "<<this->firstName<<" "<<this->lastName<<endl;
+s<<"El id es: "<<this->documentId<<endl;
+return s.str();
+ }

@@ -8,6 +8,7 @@
 
 #include <string>
 #include <iostream>
+#include<sstream>
 
 using namespace std;
 /**
@@ -36,8 +37,8 @@ int getDocumentId();
 
 void setDocumentId(int documentId);
 
-virtual  double salary();
-virtual string toString()=0;
+virtual  double salary()=0;
+virtual string toString();
 
 };
 

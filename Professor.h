@@ -19,8 +19,8 @@ double getCommissionRate(){};
 void setCommissionRate(double commissionRate){};
 double getMonthlySalary(){};
 void setmonthlySalary(double monthlySalary){};
-double Salary(){};
-string toString(){};
+double Salary() override {};
+string toString() override {};
 
 
 };
