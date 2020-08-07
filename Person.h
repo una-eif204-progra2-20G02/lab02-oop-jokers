@@ -24,19 +24,12 @@ int documentId;
 public:
 Person();
 Person(const string firstName, const string lastName, int documenteId);
-
 string getFirstName();
-
 void setFirstName(string firstName);
-
 string getLastName();
-
 void setLastName(string);
-
 int getDocumentId();
-
 void setDocumentId(int documentId);
-
 virtual  double salary()=0;
 virtual string toString();
 
