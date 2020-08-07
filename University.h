@@ -24,7 +24,11 @@ class University {
   string getName();
   void setName(const string name);
   Professor* getProfessor();
-  void setProfessor(Professor*);
+  void setProfessor(Professor* professor);
+  Administrative* getAdministrative();
+  void setAdministrative(Administrative* admin);
+  void addProfessor(Professor* professor);
+  
 
 
 
