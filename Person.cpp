@@ -5,7 +5,7 @@
 #include "Person.h"
 
 Person::Person(){}
-Person::Person(const string firstName, const string lastName, int documentId)
+Person::Person(const std:string firstName, const std::string lastName, int documentId)
 {
   this->firstName=firstName;
   this->lastName=lastName;
