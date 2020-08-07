@@ -10,35 +10,27 @@
 #include <iostream>
 #include<sstream>
 
-using namespace std;
 /**
  * Abstract Class of Person
  */
 class Person {
 
 private:
-string firstName;
-string lastName;
+std::string firstName;
+std::string lastName;
 int documentId;
 
 public:
 Person();
-Person(const string firstName, const string lastName, int documenteId);
-
-string getFirstName();
-
-void setFirstName(string firstName);
-
-string getLastName();
-
-void setLastName(string);
-
+Person(const std::string& firstName, const std::string& lastName, int documenteId);
+std::string getFirstName();
+void setFirstName(std::string &firstName);
+std::string getLastName();
+void setLastName(const std::string&);
 int getDocumentId();
-
 void setDocumentId(int documentId);
-
-virtual  double salary()=0;
-virtual string toString();
+virtual const double salary()=0;
+virtual const std::string toString();
 
 };
 
