@@ -10,6 +10,19 @@
 #include "Administrative.h"
 
 class University {
+  private:
+  string name;
+  Professor* professor;
+  Administrative* admin;
+  vector<Professor*> ProfessorList;
+  vector<Administrative*> AdministrativeList;
+
+  public:
+  University();
+  University(const string name);
+  University(const string name, const Professor* professor, const Administrative* admin);
+  
+
 
 };
 
