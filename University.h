@@ -28,7 +28,9 @@ class University {
   Administrative* getAdministrative();
   void setAdministrative(Administrative* admin);
   void addProfessor(Professor* professor);
-  
+  void getListProfessor();
+  void addAdmin(Administrative* admin);
+  void getListAdministrative();
 
 
 
