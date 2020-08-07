@@ -5,25 +5,25 @@
 #include "Person.h"
 
 Person::Person(){}
-Person::Person(const std:string firstName, const std::string lastName, int documentId)
+Person::Person(const std::string& firstName, const std::string& lastName, int documentId)
 {
   this->firstName=firstName;
   this->lastName=lastName;
   this->documentId=documentId;
 }
-string Person::  getFirstName()
+std::string Person::getFirstName()
 {
   return this->firstName;
 }
-void Person:: setFirstName(string firstName)
+void Person::setFirstName(std::string& firstName)
 {
   this->firstName=firstName;
 }
-string Person::getLastName()
+std::string Person::getLastName()
 {
   return this->lastName;
 }
-void Person:: setLastName(string)
+void Person::setLastName(std::string& lastName)
 {
   this->lastName=lastName;
 }
@@ -36,7 +36,9 @@ void Person:: setDocumentId(int documentId)
   this->documentId=documentId;
 }
 
-string Person::toString() { stringstream s;
+std::string Person::toString()
+{
+    std::stringstream s;
 s<<"El nombre completo de la persona es: "<<this->firstName<<" "<<this->lastName<<endl;
 s<<"El id es: "<<this->documentId<<endl;
 return s.str();

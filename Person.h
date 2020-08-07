@@ -24,7 +24,7 @@ public:
 Person();
 Person(const std::string& firstName, const std::string& lastName, int documenteId);
 std::string getFirstName();
-void setFirstName(std::string &firstName);
+void setFirstName(const std::string &firstName);
 std::string getLastName();
 void setLastName(const std::string&);
 int getDocumentId();
@@ -32,6 +32,7 @@ void setDocumentId(int documentId);
 virtual const double salary()=0;
 virtual const std::string toString();
 
+    void setFirstName(std::string &firstName);
 };
 
 
