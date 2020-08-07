@@ -21,7 +21,11 @@ class University {
   University();
   University(const string name);
   University(const string name, const Professor* professor, const Administrative* admin);
-  
+  string getName();
+  void setName(const string name);
+  Professor* getProfessor();
+  void setProfessor(Professor*);
+
 
 
 };
