@@ -18,7 +18,7 @@ virtual ~Professor(){};
 double getCommissionRate(){};
 void setCommissionRate(double commissionRate){};
 double getMonthlySalary(){};
-void setmonthlySalary(double monthlySalary){};
+void setMonthlySalary(double monthlySalary){};
 double Salary() override {};
 string toString() override {};
 
