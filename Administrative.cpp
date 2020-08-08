@@ -25,7 +25,7 @@ double Administrative::Salary(){
 }
 const std::string Administrative::toString(){
   std::stringstream s;
-  s<<"Informacion"<<Person::toString()<<std::endl;
+  s<<"Information "<<Person::toString()<<std::endl;
   s<< "Monthly Salary: "<<Salary()<<std::endl;
   return s.str();
 }
