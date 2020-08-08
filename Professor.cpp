@@ -3,8 +3,6 @@
 //
 #include <iomanip>
 #include <stdexcept>
-#include <sstream>
-#include <iostream>
 #include "Professor.h"
 
 //Professor::Professor() {}
