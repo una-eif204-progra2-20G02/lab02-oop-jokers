@@ -25,9 +25,8 @@ this->commissionRate=commissionRate;
 double Professor::getMonthlySalary(){
   return monthlySalary;
 }
-void Professor::setmonthlySalary(double monthlySalary){
-  this->monthlySalary=monthlySalary;
-}
+void Professor::setMonthlySalary(double monthlySalary) {  this->monthlySalary=monthlySalary;}
+
 double Professor::Salary(){
    return (getCommissionRate*getMonthlySalary)+ getMonthlySalary;
 }
