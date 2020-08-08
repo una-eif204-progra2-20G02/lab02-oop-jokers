@@ -15,18 +15,13 @@ std::string Person::getFirstName()
 {
   return this->firstName;
 }
-void Person::setFirstName(std::string& firstName)
-{
-  this->firstName=firstName;
-}
+void Person::setFirstName(const std::string &firstName) {  this->firstName=firstName;}
+
 std::string Person::getLastName()
 {
   return this->lastName;
 }
-void Person::setLastName(std::string& lastName)
-{
-  this->lastName=lastName;
-}
+void Person::setLastName(const std::string &lastName) {  this->lastName=lastName;}
 int Person:: getDocumentId()
 {
   return this->documentId;
@@ -36,10 +31,10 @@ void Person:: setDocumentId(int documentId)
   this->documentId=documentId;
 }
 
-std::string Person::toString()
-{
+const std::string Person::toString() {
+
     std::stringstream s;
-s<<"El nombre completo de la persona es: "<<this->firstName<<" "<<this->lastName<<endl;
-s<<"El id es: "<<this->documentId<<endl;
+s<<"El nombre completo de la persona es: "<<this->firstName<<" "<<this->lastName<<std::endl;
+s<<"El id es: "<<this->documentId<<std::endl;
 return s.str();
  }

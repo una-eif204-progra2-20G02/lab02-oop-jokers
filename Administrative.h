@@ -16,7 +16,7 @@ public:
     double getMothlySalary();
     void setMonthlySalary(double monthlySalary);
     double Salary() ;
-    std::string toString() ;
+    const std::string toString() ;
 
 };
 
