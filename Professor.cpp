@@ -19,13 +19,16 @@ this-> commissionRate= commissionRate;
 //Professor::~Professor() {}
 double Professor::getCommissionRate() { return commissionRate;}
 
-void Professor::setCommissionRate(double commissionRate){
+void Professor::setCommissionRate(double commissionRate) {
+    this-> commissionRate=commissionRate;
+}
 this->commissionRate=commissionRate;
 }
 double Professor::getMonthlySalary(){
   return monthlySalary;
 }
-void Professor::setMonthlySalary(double monthlySalary) {  this->monthlySalary=monthlySalary;}
+void Professor::setMonthlySalary(double monthlySalary) {
+    this->monthlySalary=monthlySalary;}
 
 double Professor::Salary(){
    return (getCommissionRate*getMonthlySalary)+ getMonthlySalary;

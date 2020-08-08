@@ -11,18 +11,18 @@
 
 class University {
   private:
-  string name;
+  std::string name;
   Professor* professor;
   Administrative* admin;
-  vector<Professor*> ProfessorList;
-  vector<Administrative*> AdministrativeList;
+  std::vector<Professor*> ProfessorList;
+  std::vector<Administrative*> AdministrativeList;
 
   public:
   University();
-  University(const string name);
-  University(const string name, const Professor* professor, const Administrative* admin);
-  string getName();
-  void setName(const string name);
+  University(const std::string& name);
+  University(const std::string &name, const Professor* professor, const Administrative* admin);
+  std::string getName();
+  void setName(const std::string name);
   Professor* getProfessor();
   void setProfessor(Professor* professor);
   Administrative* getAdministrative();
