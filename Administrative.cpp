@@ -23,7 +23,7 @@ void Administrative::setMonthlySalary(double monthlySalary) {  this->monthlySala
 double Administrative::Salary(){
    return getMothlySalary();
 }
-std::string Administrative::toString(){
+const std::string Administrative::toString(){
   std::stringstream s;
   s<<"Informacion"<<Person::toString()<<std::endl;
   s<< "Monthly Salary: "<<Salary()<<std::endl;
