@@ -6,23 +6,21 @@
 #include <sstream>
 #include <iostream>
 #include "Professor.h"
-using namespace std;
 
-Professor::Professor(){
-
-}
+//Professor::Professor() {}
 Professor::Professor(double monthlySalary, double commissionRate){
   this-> monthlySalary= monthlySalary;
-this-> commissionRate= commissionRate;}
-
-Professor::Professor(double monthlySalary, double commissionRate, const string firstName, const string lastName, const int documentId): Person(firstName,  lastName, documentId) {
-  this-> monthlySalary= monthlySalary;
-this-> commissionRate= commissionRate;}
-
- Professor::~Professor(){}
-double Professor::getCommissionRate(){
-  return Professor::commissionRate;
+  this-> commissionRate= commissionRate;
 }
+
+Professor::Professor(double monthlySalary, double commissionRate, const std::string firstName, const std::string lastName, const int documentId): Person(firstName,  lastName, documentId) {
+  this-> monthlySalary= monthlySalary;
+this-> commissionRate= commissionRate;
+}
+
+//Professor::~Professor() {}
+double Professor::getCommissionRate() { return commissionRate;}
+
 void Professor::setCommissionRate(double commissionRate){
 this->commissionRate=commissionRate;
 }
@@ -36,10 +34,10 @@ double Professor::Salary(){
    return (getCommissionRate*getMonthlySalary)+ getMonthlySalary;
 }
 
-string Professor::toString(){
-  stringstream s;
-  s<<"Informacion"<<Person::toString()<<endl;
-  s<< "Monthly Salary: "<<Salary<<endl;
+const std::string Professor::toString(){
+  std::stringstream s;
+  s<<"Informacion"<<Person::toString()<<std::endl;
+  s<< "Monthly Salary: "<<Salary<<std::endl;
   return s.str();
 }
 // da errores de "x already has a body".
