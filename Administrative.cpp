@@ -7,27 +7,26 @@
 #include "Administrative.h"
 
 
-Administrative::Administrative(){}
-Administrative::Administrative(double monthlySalary){}
-Administrative::Administrative(double monthlySalary, const std::string firstName, const std::string lastName, const int documentId): Person(firstName,  lastName, documentId) {
-  this-> monthlySalary= monthlySalary;
+Administrative::Administrative(){
+
 }
-virtual Administrative::~Administrative(){}
-double Administrative::getMonthlySalary(){
-  return monthlySalary;
+Administrative::Administrative(double monthlySalary){
+    this->monthlySalary=monthlySalary;
 }
-void Administrative::setmonthlySalary(double monthlySalary){
-  this->monthlySalary=monthlySalary;
+Administrative::Administrative(const std::string &firstName, const std::string &lastName, int documentld,double monthlySalary) {
+
 }
+double Administrative::getMothlySalary() {return monthlySalary;}
+
+void Administrative::setMonthlySalary(double monthlySalary) {  this->monthlySalary=monthlySalary;}
 
 double Administrative::Salary(){
-   return  getMonthlySalary;
+   return getMothlySalary();
 }
-
-string Administrative::toString(){
-  stringstream s;
-  s<<"Informacion"<<Person::toString()<<endl;
-  s<< "Monthly Salary: "<<Salary()<<endl;
+std::string Administrative::toString(){
+  std::stringstream s;
+  s<<"Informacion"<<Person::toString()<<std::endl;
+  s<< "Monthly Salary: "<<Salary()<<std::endl;
   return s.str();
 }
 

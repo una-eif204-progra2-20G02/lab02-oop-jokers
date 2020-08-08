@@ -15,8 +15,8 @@ public:
     Administrative(const std::string& firstName,const std::string& lastName,int documentld,double monthlySalary);
     double getMothlySalary();
     void setMonthlySalary(double monthlySalary);
-    double Salary() override;
-    string toString() override;
+    double Salary() ;
+    std::string toString() ;
 
 };
 
