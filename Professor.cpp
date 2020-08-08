@@ -22,8 +22,6 @@ double Professor::getCommissionRate() { return commissionRate;}
 void Professor::setCommissionRate(double commissionRate) {
     this-> commissionRate=commissionRate;
 }
-this->commissionRate=commissionRate;
-}
 double Professor::getMonthlySalary(){
   return monthlySalary;
 }
@@ -33,7 +31,6 @@ void Professor::setMonthlySalary(double monthlySalary) {
 double Professor::Salary(){
    return (getCommissionRate*getMonthlySalary)+ getMonthlySalary;
 }
-
 const std::string Professor::toString(){
   std::stringstream s;
   s<<"Informacion"<<Person::toString()<<std::endl;

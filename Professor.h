@@ -19,8 +19,6 @@ double getMonthlySalary(){};
 void setMonthlySalary(double monthlySalary){};
 double Salary() {};
 const std::string toString(){};
-
-
 };
 
 #endif //LAB02_OOP_PROFESSOR_H
