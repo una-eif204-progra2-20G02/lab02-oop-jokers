@@ -4,7 +4,11 @@
 
 #include "Person.h"
 
-Person::Person(){}
+Person::Person(){
+    firstName="";
+    lastName="";
+    documentId=0;
+}
 Person::Person(const std::string& firstName, const std::string& lastName, int documentId)
 {
   this->firstName=firstName;
@@ -34,7 +38,7 @@ void Person:: setDocumentId(int documentId)
 const std::string Person::toString() {
 
     std::stringstream s;
-s<<"El nombre completo de la persona es: "<<this->firstName<<" "<<this->lastName<<std::endl;
-s<<"El id es: "<<this->documentId<<std::endl;
+s<<"Full name: "<<this->firstName<<" "<<this->lastName<<std::endl;
+s<<"Id : "<<this->documentId<<std::endl;
 return s.str();
  }
