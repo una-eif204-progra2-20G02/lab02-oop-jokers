@@ -2,7 +2,6 @@
 // Created by Maikol Guzman on 8/2/20.
 //
 
-#include <sstream>
 #include "University.h"
 
 University::University() {}
@@ -22,7 +21,7 @@ void University::setAdministrative(Administrative* admin){this->admin=admin;}
 void University::addProfessor(Professor* professor)
 {
 }
-void University::getListProfessor()
+void University::getListProfessor(Professor *professor)
 {
 
 }
@@ -30,7 +29,7 @@ void University::addAdmin(Administrative* admin)
 {
 
 }
-void University::getListAdministrative()
+void University::getListAdministrative(Administrative *admin)
 {
 
 }
