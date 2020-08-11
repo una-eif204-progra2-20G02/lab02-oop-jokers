@@ -13,9 +13,6 @@ Administrative::Administrative(){
 Administrative::Administrative(double monthlySalary){
     this->monthlySalary=monthlySalary;
 }
-Administrative::Administrative(const std::string &firstName, const std::string &lastName, int documentld,double monthlySalary) {
-
-}
 double Administrative::getMothlySalary() {return monthlySalary;}
 
 void Administrative::setMonthlySalary(double monthlySalary) {  this->monthlySalary=monthlySalary;}

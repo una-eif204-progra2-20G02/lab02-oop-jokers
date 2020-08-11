@@ -12,7 +12,7 @@ private:
 public:
     Administrative();
     Administrative(double monthlySalary);
-    Administrative(const std::string& firstName,const std::string& lastName,int documentld,double monthlySalary);
+    Administrative(const std::string& firstName,const std::string& lastName,int documentld,double monthlySalary){};
     double getMothlySalary();
     void setMonthlySalary(double monthlySalary);
     double Salary() ;

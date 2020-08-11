@@ -10,15 +10,16 @@ class Professor: public Person {
 double monthlySalary;
 double commissionRate;
 public:
-Professor(){};
-Professor(double monthlySalary, double commissionRate){};
-Professor(double monthlySalary, double commissionRate, const std::string lastName, const std::string firstName, const int documentId): Person(firstName, lastName, documentId) {};
-virtual ~Professor(){};
-double getCommissionRate(){};;
-double getMonthlySalary(){};
-void setMonthlySalary(double monthlySalary){};
-double Salary() {};
-const std::string toString(){};
+Professor();
+Professor(double monthlySalary, double commissionRate);
+Professor(double monthlySalary, double commissionRate, const std::string lastName, const std::string firstName, const int documentId): Person(firstName, lastName, documentId){};
+virtual ~Professor();
+double getCommissionRate();
+void setCommissionRate(double commissionRate);
+double getMonthlySalary();
+void setMonthlySalary(double monthlySalary);
+double Salary();
+const std::string toString();
 };
 
 #endif //LAB02_OOP_PROFESSOR_H
